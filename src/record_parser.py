@@ -86,18 +86,3 @@ def parse_record_line_with_filter(record_line):
     record_dict.pop('OTHER_ID')
     record_dict['TRANSACTION_AMT'] = int(record_dict['TRANSACTION_AMT'])
     return record_dict
-
-if __name__ == "__main__":
-    PROJECT_PATH = os.getcwd()
-    TEST_PATH = path.join(PROJECT_PATH, "insight_testsuite/tests/test_1")
-    INPUT_PATH = path.join(TEST_PATH, "input/itcont.txt")
-    with open(INPUT_PATH) as input_file:
-        line1 = input_file.readline()
-        line1_p = parse_record_line(line1)
-    for key, value in line1_p.items():
-        print "{}: {}".format(key, value)
-    print is_valid_cmte_id(line1_p['CMTE_ID'])
-    print is_valid_other_id(line1_p['OTHER_ID'])
-    print is_valid_trans_date(line1_p['TRANSACTION_DT'])
-    print is_valid_trans_amt(line1_p['TRANSACTION_AMT'])
-    print is_valid_zip_code(line1_p['ZIP_CODE'])
