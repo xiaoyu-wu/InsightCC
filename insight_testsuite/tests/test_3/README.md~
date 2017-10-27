@@ -1,1 +1,0 @@
-TEST: Records with invalid date should still count for by_zip output, but not for by_data output.

@@ -1,1 +1,0 @@
-TEST: Records shall be regarded as invalid if CMTE\_ID or TRANSACTION\_AMT is empty.
