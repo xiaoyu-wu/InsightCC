@@ -1,5 +1,5 @@
 from heapq import *
-import pandas as pd
+# import pandas as pd
 
 from record_parser import parse_record_line_with_filter
 
