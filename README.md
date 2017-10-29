@@ -2,16 +2,16 @@
 
 This repo is my solution to 2017 Insight Code Competition: find political donors.
 
-Approach:
+## Approach
  - An parser is first build to process each line of raw input file. The returned record as a dictionary is filtered taking into consideration for valid input.
  - For the task of calculating running median by recepient and zip, since output is expected for every line of record, we need an efficient algorithm to calculate median. The data structure chosen here is heap which facilitates median finding with complexity O(1). The complexity of inserting is O(log n).
  - For the task of calculating running median by recepient and date, since output is expected after all records are read, we can accept a more expensive way to calculate median, but data insertion should be cheap. The data structure chosen here is simply list with insertion complexity O(1) and median-finding complexity O(n log n), which is determined by the sorting algorithm.
  - Nested dictionary is used to store records for specific combination of recepient and zip / date. 
 
-Dependencies:
+## Dependencies
 This solution is written in Python 2.7 with the standard libraries. No third-party library is needed.
 
-Run instructions:
+## Run instructions
 1. Clone and checkout master branch
 ```
 [~]$ git clone https://github.com/xiaoyu-wu/InsightCC
