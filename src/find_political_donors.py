@@ -1,5 +1,5 @@
 import sys
-from data_summarize import combined_zip_and_date_processing
+from api import combined_zip_and_date_processing
 
 if __name__ == "__main__":
     INPUT_FILE_PATH = sys.argv[1]
