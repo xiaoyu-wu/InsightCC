@@ -2,7 +2,7 @@
 *.ipynb
 .ipynb_checkpoints
 .idea
-insight_testsuite/tests/test_local
+*/test_local
 insight_testsuite/results.txt
 insight_testsuite/temp
 *~
